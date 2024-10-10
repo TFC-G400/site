@@ -1,139 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terraform Coalition</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Coalition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
 
-  <style>
-    /* Global Styles */
-body {
-  font-family: 'Rajdhani', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-bottom: 100px; /* Added padding for footer */
-}
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-bottom: 100px;
+            /* Added padding for footer */
+        }
 
-/* Container Styles */
-.container {
-  width: 40%;
-  margin: 0px auto;
-}
+        /* Container Styles */
+        .container {
+            width: 40%;
+            margin: 0px auto;
+        }
 
-/* Mobile Adjustment */
-@media (max-width: 768px) {
-  .container {
-    width: 80%;
-  }
-}
+        /* Mobile Adjustment */
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+        }
 
-/* Header Styles */
-header {
-  text-align: center;
-}
+        /* Header Styles */
+        header {
+            text-align: center;
+        }
 
-header h1 {
-  font-size: 10pt;
-  letter-spacing: clamp(0.0vw, 1vw, 1.1vw);
-  color: #ffffff;
-  font-weight: 300;
-  margin-top: -4px;
-  white-space: nowrap;
-}
+        header h1 {
+            font-size: 10pt;
+            letter-spacing: clamp(0.0vw, 1vw, 1.1vw);
+            color: #ffffff;
+            font-weight: 300;
+            margin-top: -4px;
+            white-space: nowrap;
+        }
 
-.tagline {
-  font-size: 7.4pt;
-  letter-spacing: 1.5pt;
-  color: #7F7F7F;
-  font-weight: 400;
-  margin-top: 10px;
-}
+        .tagline {
+            font-size: 7.4pt;
+            letter-spacing: 1.5pt;
+            color: #7F7F7F;
+            font-weight: 400;
+            margin-top: 10px;
+        }
 
-/* Content Styles */
-.content {
-  font-size: 8.5pt;
-  letter-spacing: 0.5pt;
-  color: #898787;
-  line-height: 2.2;
-  text-align: justify;
-  text-transform: uppercase;
-}
+        /* Content Styles */
+        .content {
+            font-size: 8.5pt;
+            letter-spacing: 0.5pt;
+            color: #898787;
+            line-height: 2.2;
+            text-align: justify;
+            text-transform: uppercase;
+        }
 
-/* Footer Styles */
-footer.container {
-  font-size: 6.5pt;
-  letter-spacing: 0.6pt;
-  color: #6f6c6c;
-  line-height: 0.8;
-  text-align: left;
-  background-color: #000;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 20px; /* Added margin for visibility */
-}
+        /* Footer Styles */
+        footer.container {
+            font-size: 6.5pt;
+            letter-spacing: 0.6pt;
+            color: #6f6c6c;
+            line-height: 0.8;
+            text-align: left;
+            background-color: #000;
+            padding: 0px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            /* Added margin for visibility */
+        }
 
-footer a {
-  color: #666363;
-  text-decoration: none;
-}
+        footer a {
+            color: #666363;
+            text-decoration: none;
+        }
 
-/* GIF and SVG Styles */
-.gif-container {
-  position: relative;
-  width: 60%;
-  max-width: 309px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+        /* GIF and SVG Styles */
+        .gif-container {
+            position: relative;
+            width: 60%;
+            max-width: 309px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
 
-.gif-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-}
+        .gif-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+        }
 
-.gif-image {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: auto;
-}
+        .gif-image {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: auto;
+        }
 
-.mask {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: auto;
-  pointer-events: none;
-}
+        .mask {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: auto;
+            pointer-events: none;
+        }
 
-/* Coming Soon Styles */
-.coming-soon {
-  font-size: 5pt;
-  letter-spacing: 4pt;
-  text-align: center;
-  color: #7F7F7F;
-  text-transform: uppercase;
-  padding: 20px 0;
-  font-family: 'Rajdhani', sans-serif;
-  position: fixed;
-  bottom: auto; /* Removed fixed positioning */
-  left: 0;
-  right: 0;
-  background-color: #000;
-}
-  </style>
+        /* Coming Soon Styles */
+        .coming-soon {
+            font-size: 5pt;
+            letter-spacing: 4pt;
+            text-align: center;
+            color: #e9e4e4;
+            text-transform: uppercase;
+            padding: 20px 0;
+            font-family: 'Rajdhani', sans-serif;
+            position: absolute;
+            bottom: 0;
+            /* Removed fixed positioning */
+            left: 0;
+            right: 0;
+            background-color: #000;
+        }
+    </style>
 </head>
 
 <body>
