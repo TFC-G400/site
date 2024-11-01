@@ -76,14 +76,14 @@
             color: #cccccc;
             line-height: 2.2;
             text-align: justify;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
         }
 
         /* Footer Styles */
         footer.container {
             font-size: 7.4pt;
             letter-spacing: 1.5pt;
-            color: #605d5d;
+            color: #413d3d;
             line-height: 0.6;
             text-align: left;
             background-color: #000;
@@ -94,9 +94,19 @@
         }
 
         footer a {
-            color: #666363;
+            color: #413d3d;
             text-decoration: none;
         }
+
+        .footer-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0.5; /* adjust opacity to your liking /
+            z-index: -1; / ensure image is behind text */
+            }
 
         /* GIF and SVG Styles */
         .gif-container {
@@ -137,16 +147,18 @@
             font-size: 5pt;
             letter-spacing: 4pt;
             text-align: center;
-            color: #e9e4e4;
+            color: #413d3d;
             text-transform: uppercase;
             padding: 20px 0;
             font-family: 'Rajdhani', sans-serif;
-            position: absolute;
-            bottom: 0;
-            /* Removed fixed positioning */
-            left: 0;
-            right: 0;
-            background-color: #000;
+            position: fixed;
+            bottom: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: transparent;
+            z-index: 2;
+            width: 100%; 
+            margin: 0 auto; 
         }
     </style>
 </head>
@@ -170,21 +182,14 @@
             <div class="container content">
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
-                Every day, nearly 385,000 new lives take root on planet Earth. Global population is set to surge past 10
-                billion before growth begins to stabilize. Depletion—ruthlessly outpacing recovery—defines our most
-                critical challenge. Humanity has overstretched Earth's resources by a staggering 70%—effectively using
-                1.7 Earths.
+                Every day, 385,000 new lives take root on planet Earth. The global population is set to surge past 10 billion before reaching a plateau by mid-century. The critical challenge: as the rate of depletion ruthlessly outpaces recovery, humanity has already overshot Earth’s resources by a staggering 70%—effectively using 1.7 Earths.
+
                 </br></br>
-                The limits of growth have been crossed. The challenge has fundamentally changed, but we still haven’t
-                realized the stark reality. Conservation—our presumed strategy—was an opportunity lost half a century
-                ago when we crossed the 4 billion mark. Thus, We haven't just fallen behind on sustainability
-                challenges;
-                we've missed the alarm entirely.
+                The challenge has fundamentally changed as the limits of growth have been crossed, but we still haven’t realized the stark reality. Conservation—our presumed strategy—was an opportunity lost half a century ago when we crossed the 4-billion mark. We haven’t just fallen behind on our sustainability challenges; we’ve missed the alarm entirely.
+
                 </br></br>
-                This, however, is not a story of doom. It is the inception of the greatest endeavor humanity will ever
-                have to undertake: to co-create with Earth the evolution of its life support capabilities. What nature has
-                meticulously crafted over eons, we must now heal and augment within the course of our lifetimes. Welcome
-                to the dawn of terraforming—ecosystem as a service.
+                This, however, is not a story of doom. It is the inception of the greatest endeavor humanity will ever undertake: to co-create with Earth the evolution of its life-support capabilities. What nature has meticulously crafted over eons, we must now heal and augment within our lifetimes. Welcome to the dawn of Terraforming—Ecosystem as a Service.
+
             </div>
         </section>
 
@@ -193,14 +198,21 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
             <p>THE TERRAFORM COALITION - YEAR: 02025</p>
             <p>GENERATION 400 - THE FOUNDERS</p>
             <p>WE SEE EARTH DIFFERENTLY</p>
             <p><a href="http://WWW.TFC.EARTH">WWW.TFC.EARTH</a> </p>
+            <p>&nbsp;</p>
+            <p>Coming soon</p>
+            <img src="footer_earth.png" alt="Footer Image" class="footer-image">
         </footer>
     </div>
     
-
+    
 </body>
 
 </html>
